@@ -11,7 +11,7 @@
 
 This is a sub-project of the Open-CE project for building python specifically optimized for Power10 architecture.
 
-This repository contains an Open-CE environment file that builds optimized python using the [python feedstock](https:///github.com/open-ce/python-feedstock). Open-CE-Python currently supports the following:
+This repository contains an Open-CE environment file that builds optimized python using the [python feedstock](https:///github.com/open-ce/python-feedstock). Open-CE Python currently supports the following:
 
 | | Supported Versions |
 | --- | --- |
@@ -33,7 +33,7 @@ This repository contains an Open-CE environment file that builds optimized pytho
 
 ### Building Open-CE Python
 
-Open-CE Python can be built like any other Open-CE package. This repository contains [envs/python-env.yaml](https://github.com/open-ce/open-ce-python/blob/main/envs/python-env.yaml) which is to be used to build optimized python. The `open-ce` tool can be used to build this python. For more information on the `open-ce` tool, please see the open-ce-builder [repository](https://github.com/open-ce/open-ce-builder).
+Open-CE Python can be built like any other Open-CE package. This repository contains [envs/python-env.yaml](https://github.com/open-ce/open-ce-python/blob/main/envs/python-env.yaml) which is to be used to build optimized python. The `open-ce` tool can be used to build this python. For more information on the `open-ce` tool, please see the Open-CE Builder [repository](https://github.com/open-ce/open-ce-builder).
 
 For example:
 ```shell
