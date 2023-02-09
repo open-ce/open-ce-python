@@ -26,7 +26,7 @@ This repository contains an Open-CE environment file that builds optimized pytho
   * The conda tool can either be installed through [Anaconda](https://www.anaconda.com/products/individual#Downloads) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
 
 * `Redhat GCC 11`
-  Redhat's `gcc-toolset-11` package is needed which can be installed via `yum install -y gcc-toolset-11`. To install this, we need to have RHEL 8.x with Power9/Power10 architecture.
+  Redhat's `gcc-toolset-11` package is needed which can be installed via `yum install -y gcc-toolset-11`. RHEL 8.x with Power 9 or Power 10 architecture is required.
 
 ### Building Open-CE Python
 
