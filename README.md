@@ -5,7 +5,7 @@
 </p>
 
 [![Python Support](https://img.shields.io/badge/python-3.10-blue.svg)](#requirements)
-[![Architecture Support](https://img.shields.io/badge/architecture-ppc64le%20%7C%20)](#)
+[![Architecture Support](https://img.shields.io/badge/architecture-ppc64le-blue)](#)
 [![GitHub Licence](https://img.shields.io/github/license/open-ce/open-ce.svg)](LICENSE)
 ---
 
@@ -34,7 +34,7 @@ Open-CE Python can be built like any other Open-CE package. This repository cont
 
 For example:
 ```shell
-    open-ce build env --python_versions=3.10 --ppc_arch=p10 python-env.yaml
+    open-ce build env --python_versions=3.10 --ppc_arch=p10 --build_type=cpu python-env.yaml
 ```
 
 ## Contributions
