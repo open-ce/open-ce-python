@@ -1,10 +1,10 @@
-[![Open-CE-Python Stars](https://img.shields.io/github/stars/open-ce?style=social)](https://github.com/open-ce/open-ce-python/stargazers)
+[![Open-CE-Python Stars](https://img.shields.io/github/stars/open-ce-python?style=social)](https://github.com/open-ce/open-ce-python/stargazers)
 
 <p align="center">
   <img src="https://avatars0.githubusercontent.com/u/68873540?s=400&u=a02dc4156e50cdffb23172aba7133e44381885d4&v=4" alt="Open-CE Logo" width="30%">
 </p>
 
-[![Python Support](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10-blue.svg)](#requirements)
+[![Python Support](https://img.shields.io/badge/python-3.10-blue.svg)](#requirements)
 [![Architecture Support](https://img.shields.io/badge/architecture-ppc64le%20%7C%20)](#)
 [![GitHub Licence](https://img.shields.io/github/license/open-ce/open-ce.svg)](LICENSE)
 ---
@@ -17,8 +17,6 @@ This repository contains an Open-CE environment file that builds optimized pytho
 | --- | --- |
 | Architecture | Power |
 | Python | 3.10 |
-
-Open-CE provides optimized python for python version 3.10.
 
 ## GETTING STARTED
 
