@@ -39,7 +39,7 @@ For example:
 
 ## Contributions
 
-For contribution information, please see the [CONTRIBUTING.md](CONTRIBUTING.md) page.
+For contribution information, please see the [CONTRIBUTING.md](https://github.com/open-ce/open-ce/blob/main/CONTRIBUTING.md) page.
 
 ## Slack Community
 
