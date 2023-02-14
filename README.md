@@ -33,7 +33,7 @@ This repository contains an Open-CE environment file that builds optimized pytho
 
 ### Building Open-CE Python
 
-Open-CE Python can be built like any other Open-CE package. This repository contains [envs/python-env.yaml](https://github.com/open-ce/open-ce-python/blob/main/envs/python-env.yaml) which is to be used to build optimized python. The `open-ce` tool can be used to build this python. For more information on the `open-ce` tool, please see the Open-CE Builder [repository](https://github.com/open-ce/open-ce-builder).
+Open-CE Python can be built like any other Open-CE package. This repository contains [envs/python-env.yaml](https://github.com/open-ce/open-ce-python/blob/main/envs/python-env.yaml) which is to be used to build optimized python. The `open-ce` tool can be used to build this python. For more information on the `open-ce` tool, please see the Open-CE Builder [repository](https://github.com/open-ce/open-ce-builder/blob/main/doc/README.open_ce_build.md).
 
 For example:
 ```shell
