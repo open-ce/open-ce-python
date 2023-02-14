@@ -66,7 +66,7 @@ One can use Open-CE packages along with the optimized Open-CE Python. Following 
 ```
 
 4. Install Open-CE packages from any of the following channels -
-5. 
+
    * https://anaconda.org/rocketce/
    * https://ftp.osuosl.org/pub/open-ce/current/
    * https://opence.mit.edu/
