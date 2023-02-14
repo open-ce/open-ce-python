@@ -4,5 +4,3 @@ packages:
   - feedstock : python
     git_tag : main-3.10
 
-git_tag_for_env: open-ce-python-v1.0.0
-
