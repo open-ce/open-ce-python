@@ -37,7 +37,7 @@ Open-CE Python can be built like any other Open-CE package. This repository cont
 
 For example:
 ```shell
-    open-ce build env --python_versions=3.10 --ppc_arch=p10 --build_type=cpu python-env.yaml
+    open-ce build env --python_versions=3.10 --ppc_arch=p10 --output_folder=condabuild --build_type=cpu python-env.yaml
 ```
 
 ### Using Open-CE python with other Open-CE packages
@@ -49,7 +49,7 @@ One can use Open-CE packages along with the optimized Open-CE Python. Following 
     conda create -n <conda env name> python=3.10.9 -c file://<path to condabuild directory>
 ```
    Here, `path to condabuild directory` means the path to `--output_folder` when python was built as per above section.
-   By default it is `condabuild` named directory.
+   If you have not specified `--output-folder` during the build, the directory will be `condabuild`.
 
 2. Activate the conda environment
 ```shell
@@ -66,15 +66,17 @@ python                    3.10.9               hd70dfa7_0    file://<path to con
 ```
 
 4. Install Open-CE packages from any of the following channels -
-* https://ftp.osuosl.org/pub/open-ce/current/
-* https://opence.mit.edu/
-* https://anaconda.org/rocketce/
+   * https://anaconda.org/rocketce/
+   * https://ftp.osuosl.org/pub/open-ce/current/
+   * https://opence.mit.edu/
 
 For example:
 ```shell
 conda install -y tensorflow-cpu libtensorflow onnx onnxruntime pytorch-cpu openblas -c rocketce
 ```
-One must ensure that python installed in the conda environment is not updated/replaced by any other python source like Anaconda. Step #3 can be repeated here to ensure this.
+
+5. Python Verification
+   When you're done with the package installation, run `(<conda env name>)$ conda list python` again to ensure that the python installed in the conda environment is not updated/replaced by any other python source like Anaconda.
 
 ## Contributions
 
