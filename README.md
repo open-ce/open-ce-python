@@ -40,6 +40,42 @@ For example:
     open-ce build env --python_versions=3.10 --ppc_arch=p10 --build_type=cpu python-env.yaml
 ```
 
+### Using Open-CE python with other Open-CE packages
+
+One can use Open-CE packages along with the optimized Open-CE Python. Following are the steps to setup Open-CE Python and Open-CE packages in a single conda environment -
+
+1. Create a new conda environment with optimized python built as mentioned in above section.
+```shell
+    conda create -n <conda env name> python=3.10.9 -c file://<path to condabuild directory>
+```
+   Here, `path to condabuild directory` means the path to `--output_folder` when python was built as per above section.
+   By default it is `condabuild` named directory.
+
+2. Activate the conda environment
+```shell
+    conda activate <conda env name>
+```
+
+3. Confirm the source of python package in the environment
+```shell
+(<conda env name>)$ conda list python
+# packages in environment at $HOME/anaconda3/envs/<conda env name>:
+#
+# Name                    Version                   Build  Channel
+python                    3.10.9               hd70dfa7_0    file://<path to condabuild directory>
+```
+
+4. Install Open-CE packages from any of the following channels -
+* https://ftp.osuosl.org/pub/open-ce/current/
+* https://opence.mit.edu/
+* https://anaconda.org/rocketce/
+
+For example:
+```shell
+conda install -y tensorflow-cpu libtensorflow onnx onnxruntime pytorch-cpu openblas -c rocketce
+```
+One must ensure that python installed in the conda environment is not updated/replaced by any other python source like Anaconda. Step #3 can be repeated here to ensure this.
+
 ## Contributions
 
 For contribution information, please see the [CONTRIBUTING.md](https://github.com/open-ce/open-ce/blob/main/CONTRIBUTING.md) page.
