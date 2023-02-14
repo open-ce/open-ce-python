@@ -58,21 +58,22 @@ One can use Open-CE packages along with the optimized Open-CE Python. Following 
 
 3. Confirm the source of python package in the environment
 ```shell
-(<conda env name>)$ conda list python
-# packages in environment at $HOME/anaconda3/envs/<conda env name>:
-#
-# Name                    Version                   Build  Channel
-python                    3.10.9               hd70dfa7_0    file://<path to condabuild directory>
+    (<conda env name>)$ conda list python
+    # packages in environment at $HOME/anaconda3/envs/<conda env name>:
+    #
+    # Name                    Version                   Build  Channel
+    python                    3.10.9               hd70dfa7_0    file://<path to condabuild directory>
 ```
 
 4. Install Open-CE packages from any of the following channels -
+5. 
    * https://anaconda.org/rocketce/
    * https://ftp.osuosl.org/pub/open-ce/current/
    * https://opence.mit.edu/
 
 For example:
 ```shell
-conda install -y tensorflow-cpu libtensorflow onnx onnxruntime pytorch-cpu openblas -c rocketce
+    conda install -y tensorflow-cpu libtensorflow onnx onnxruntime pytorch-cpu openblas -c rocketce
 ```
 
 5. Python Verification
