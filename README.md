@@ -17,6 +17,7 @@ This repository contains an Open-CE environment file that builds optimized pytho
 | --- | --- |
 | Architecture | Power |
 | Python | 3.10 |
+| Python | 3.11 |
 
 ## GETTING STARTED
 
@@ -37,8 +38,10 @@ Open-CE Python can be built like any other Open-CE package. This repository cont
 
 For example:
 ```shell
-    open-ce build env --python_versions=3.10 --ppc_arch=p10 --output_folder=condabuild --build_type=cpu python-env.yaml
+    open-ce build env --python_versions=3.10,3.11 --ppc_arch=p10 --output_folder=condabuild --build_type=cpu python-env.yaml
 ```
+
+In Open-CE Python 1.1.0, we have added support to build Optimized Python 3.11. Both these python versions are built and tested using `openssl 1.*`. If Open-CE Python is to be used with Open-CE packages, then `openssl 1.*` should be used at build time of all packages including Open-CE Python.
 
 ### Using Open-CE python with other Open-CE packages
 
@@ -46,7 +49,7 @@ One can use Open-CE packages along with the optimized Open-CE Python. Following 
 
 1. Create a new conda environment with optimized python built as mentioned in above section.
 ```shell
-    conda create -n <conda env name> python=3.10.9 -c file://<path to condabuild directory>
+    conda create -n <conda env name> python=3.10.11 -c file://<path to condabuild directory>
 ```
    Here, `path to condabuild directory` means the path to `--output_folder` when python was built as per above section.
    If you have not specified `--output-folder` during the build, the directory will be `condabuild`.
@@ -62,7 +65,7 @@ One can use Open-CE packages along with the optimized Open-CE Python. Following 
     # packages in environment at $HOME/anaconda3/envs/<conda env name>:
     #
     # Name                    Version                   Build  Channel
-    python                    3.10.9               hd70dfa7_0    file://<path to condabuild directory>
+    python                    3.10.11               hd70dfa7_0    file://<path to condabuild directory>
 ```
 
 4. Install Open-CE packages from any of the following channels -
