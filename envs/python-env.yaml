@@ -2,5 +2,3 @@ builder_version: ">=10.0.1"
 
 packages:
   - feedstock : python
-    git_tag : main-3.10
-

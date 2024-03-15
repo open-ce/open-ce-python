@@ -27,5 +27,5 @@ runs:
                          ${env_path}/python-env.yaml \
                          --build_types cpu \
                          --ppc_arch=p10 \
-                         --python_versions 3.10 \
+                         --python_versions=3.10,3.11 \
                          --repository_folder ../
