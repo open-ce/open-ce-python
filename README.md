@@ -61,8 +61,8 @@ One can use Open-CE packages along with the optimized Open-CE Python. Following 
     (<conda env name>)$ conda list python
     # packages in environment at $HOME/anaconda3/envs/<conda env name>:
     #
-    # Name                    Version                   Build  Channel
-    python                    3.10.11               hd70dfa7_0    file://<path to condabuild directory>
+    # Name                    Version                   Build      Channel
+    python                    3.11.8                 hd70dfa7_0    file://<path to condabuild directory>
 ```
 
 4. Install Open-CE packages from any of the following channels -
