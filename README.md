@@ -40,8 +40,6 @@ For example:
     open-ce build env --python_versions=3.11 --ppc_arch=p10 --output_folder=condabuild --build_type=cpu python-env.yaml
 ```
 
-In Open-CE Python 1.1.0, we have added support to build Optimized Python 3.11. Both these python versions are built and tested using `openssl 1.*`. If Open-CE Python is to be used with Open-CE packages, then `openssl 1.*` should be used at build time of all packages including Open-CE Python.
-
 ### Using Open-CE python with other Open-CE packages
 
 One can use Open-CE packages along with the optimized Open-CE Python. Following are the steps to setup Open-CE Python and Open-CE packages in a single conda environment -
