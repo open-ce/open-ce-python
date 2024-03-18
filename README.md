@@ -4,7 +4,7 @@
   <img src="https://avatars0.githubusercontent.com/u/68873540?s=400&u=a02dc4156e50cdffb23172aba7133e44381885d4&v=4" alt="Open-CE Logo" width="30%">
 </p>
 
-[![Python Support](https://img.shields.io/badge/python-3.10-blue.svg)](#requirements)
+[![Python Support](https://img.shields.io/badge/python-3.11-blue.svg)](#requirements)
 [![Architecture Support](https://img.shields.io/badge/architecture-ppc64le-blue)](#)
 [![GitHub Licence](https://img.shields.io/github/license/open-ce/open-ce.svg)](LICENSE)
 ---
@@ -16,7 +16,6 @@ This repository contains an Open-CE environment file that builds optimized pytho
 | | Supported Versions |
 | --- | --- |
 | Architecture | Power |
-| Python | 3.10 |
 | Python | 3.11 |
 
 ## GETTING STARTED
@@ -26,8 +25,8 @@ This repository contains an Open-CE environment file that builds optimized pytho
 * `conda`
   * The conda tool can either be installed through [Anaconda](https://www.anaconda.com/products/individual#Downloads) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
 
-* `Redhat GCC 11`
-  Redhat's `gcc-toolset-11` package is needed which can be installed via `yum install -y gcc-toolset-11`. 
+* `Redhat GCC 12`
+  Redhat's `gcc-toolset-12` package is needed which can be installed via `yum install -y gcc-toolset-12`.
   
 * `System/OS`
   RHEL 8.x with Power 9 or Power 10 architecture is required.
@@ -38,7 +37,7 @@ Open-CE Python can be built like any other Open-CE package. This repository cont
 
 For example:
 ```shell
-    open-ce build env --python_versions=3.10,3.11 --ppc_arch=p10 --output_folder=condabuild --build_type=cpu python-env.yaml
+    open-ce build env --python_versions=3.11 --ppc_arch=p10 --output_folder=condabuild --build_type=cpu python-env.yaml
 ```
 
 In Open-CE Python 1.1.0, we have added support to build Optimized Python 3.11. Both these python versions are built and tested using `openssl 1.*`. If Open-CE Python is to be used with Open-CE packages, then `openssl 1.*` should be used at build time of all packages including Open-CE Python.
@@ -49,7 +48,7 @@ One can use Open-CE packages along with the optimized Open-CE Python. Following 
 
 1. Create a new conda environment with optimized python built as mentioned in above section.
 ```shell
-    conda create -n <conda env name> python=3.10.11 -c file://<path to condabuild directory>
+    conda create -n <conda env name> python=3.11.8 -c file://<path to condabuild directory>
 ```
    Here, `path to condabuild directory` means the path to `--output_folder` when python was built as per above section.
    If you have not specified `--output-folder` during the build, the directory will be `condabuild`.
